@@ -4,152 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <title>Personal Portfolio</title>
 </head>
 <body class="bg-black">
-      <header class="bg-[black] text-[white] text-[20px]">
-        <nav class="lg:flex justify-between items-center px-[100px] py-[30px] sm:flex" >
+      <nav class="fixed top-0 left-0 z-40 bg-black py-3 md:py-0 w-full backdrop-blur">
+           <div class="container flex items-center justify-between h-16 and md:h-20 ">
+              <h1 class="relative z-30 font-semibold text-2xl text-[#fff] space-x-6">
+                  Peace Sandy
+              </h1>
+              <div class="flex items-center flex-row-reverse md:flex-row gap-3 md:gap-12">
+                  <ul id="menu" class="fixed translate-y-[200%] md:translate-y-0 transform: md:static top-0 left-0 z-20 flex flex-col text-[#fff] md:big-transparent  md:flex-row items-center gap-8 md:gap-12 pt-28 pb-8 md:p-0  w-full md:w-auto bg-black dark:bg-slate-600 transition duration-500 shadow-lg md:shadow-none ">
+                     <a class="font-semibold border-b-4 border-transparent hover:border-yellow-500 " href="">Home</a>
+                     <a href="">About</a>
+                     <a href="">Skill</a>
+                     <a href="">Testimonial</a>
+                     <a href="">Portfolio</a> 
+                     <a href="">Contact</a>   
+                  </ul>
+
+                  <button id="toggle-menu" class="relative z-30 p-2 md:hidden dark:invert">
+                         <img src="whiteicon33.png" alt="" class="h-8 w-8">
+                  </button>
+              </div>
+           </div>
+      </nav>
+    <!--  <header class="bg-[black] text-[white] text-[20px]">
+        <nav class="md:flex justify-between hidden items-center px-[100px] py-[30px] space-x-6" >
+             <div>
             <img src="default-monochrome.svg" class="h-30 w-1/6 h-6 object-left sm:shrink-0 " alt="">
+               <div class="flex items-center flex-row-reverse md:flex-row gap-3 md:gap-12"> 
             <ul class="flex gap-6">
-                <a class="hover:text-green-950" href="#"><li>Home</li></a>
-                <a href="#about"><li>About</li></a>
-                <a href="#skills"><li>Skills</li></a>
-                <a href="#testimonials"><li>Testimonials</li></a>
-                <a href="#project"><li>Project</li></a>
-                <a href="#articles"><li>Articles</li></a>
-                <a class="bg-yellow-400 border-20 rounded py-1 px-2" href="#contact"><li>Get In Touch</li></a>
-            </ul>
-        </nav>
-      </header>
-      <!--Hero Section-->
-      <section id="about"
-      class="px-[200px] mt-[150px] flex justify-between items-center gap-[120px]"
-      >
-          <div class="flex flex-col gap-6 items-start sm:flex">
-            <h1 class="text-[20px] font-bold text-[white]" >HEY THERE! 👋</h1>
-            <p class="text-[20px] text-justify text-[white]">
-              I'm Peace Sandy, a passionate and dedicated 
-              software developer with a strong enthusiasm for
-               creating efficient and elegant solutions to complex problems. 
-               With one year of experience in the software development field, 
-              I have honed my skills and gained valuable expertise in various technologies and programming languages.
-            </p>
-            <button class="bg-[#fdc435] hover:bg-text-[20px] font-bold p-4 w-[160px] rounded">View My Cv</button>
+                <a class="hover:text-yellow-500" href="#"><li>Home</li></a>
+                <a href="#about" class="hover:text-yellow-500"><li>About</li></a>
+                <a href="#skills" class="hover:text-yellow-500"><li>Skills</li></a>
+                <a href="#testimonials" class="hover:text-yellow-500"><li>Testimonials</li></a>
+                <a href="#project" class="hover:text-yellow-500"><li>Project</li></a>
+                <a href="#articles" class="hover:text-yellow-500"><li>Articles</li></a>
+                <a class="bg-yellow-400 border-20 rounded py-1 px-2 hover:bg-green-950" href="#contact"><li>Get In Touch</li></a>
+            </div>
+              </ul>
           </div>
-          <img 
-           class="w-[400px] h-[350px] pr-9 pb-20 rounded sm:w-[150px] sm:h-[100px]"
-          src="IMG_2162.JPG" 
-          alt="A fluid vector image">
+        </nav>
+      </header> --> 
+      <!--Hero Section Hero Section class="px-[200px] mt-[150px] lg:flex justify-between items-center gap-[120px]"-->
+
+      <section class="hero text-white py-28">
+            <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h4 class="text-2xl font-bold text-purple-900 lg:leading-[94px] lg:text-[38px]">Hello, 👋 I'm Peace Sandy</h4>
+              <h1 class="text-5xl mt-3 font-bold lg:text-[88px] lg:leading-[94px]"><span id="typed"></span>Frontend Developer</h1>
+              <p class="mt-4 text-gray font-normal text-base w-full lg:w-3/6 ">I'm a technical writer and community manager</p>
+              <div class="mt-14">
+                <div class="mt-6 flex items-center gap-3">
+                    <a href="#" class="bg-purple-950 text-white rounded-none py-3 px-6 text-lg font-medium mr-4 ">Download Cv</a>
+                </div>
+              </div>
+            </div>
       </section>
+
+      
       <!--Skills Section-->
       <section id="skills">
          <div class="flex pl-20 justify-center pt-10" >
-            <h1 class="text-[40px] font-bold text-[#fff]">My Skills</h1>
-            <img src="code icon.png"
-             alt=""
-             class="w-[80px] h-[70px] pl-5" >
+            <h1 class="font-bold text-[#fff] text-3xl md:text-4xl mb-14">My Skills</h1>
          </div>
-         <div class="flex justify-between px-[100px] py-[50px] pt-10 ">
+         <div class="flex flex-wrap items-center justify-center gap-24 md:gap-12">
+              <div class="relative flex items-center justify-center w-28 h-28 rounded-full cursor-pointer">
              <img src="css-3.png" alt="css" class="w-[80px] h-[70px]">
+              </div>
+              <div> 
              <img src="html.png" alt="html" class="w-[80px] h-[70px]">
+            </div>
+            <div> 
              <img src="java-script.png" alt="javascript" class="w-[80px] h-[70px]">
+            </div>
+            <div> 
              <img src="reacticon.png" alt="react" class="w-[80px] h-[70px]">
+            </div>
+            <div>
              <img src="vuejs.png" alt="vuejs" class="w-[80px] h-[70px]">
+            </div>
+             <div> 
              <img src="tailwind.png" alt="tailwindcss" class="w-[80px] h-[70px]">
+            </div>
+            </div>
          </div>
       </section>
-      <!--Testimonial-->
-      <section id="testimonials">
-          <div class="flex pl-20 justify-center pt-10">
-            <h1 class="text-[40px] font-bold text-[#fff]">What Clients's Says 🧑‍🤝‍🧑</h1>
-          </div>
-          <div class="flex justify-between items-center px-[100px] py-[50px] pt-10 text-[#fff] text-center shadow-white"> 
-          <div class="bg-[#151515] shadow-lg rounded-lg overflow-hidden shadow-gray-950 border-color-[#fff] m-8">
-            <div class="flex justify-center">
-                <img src="joseph-gonzalez-iFgRcqHznqg-unsplash.jpg" alt="" class="rounded-full items-center h-45 w-32 mt-3 ">
+
+      <section class="work mt-28 py-28 bg-light-dark">
+        <div class="container max-w-6xl mx-auto px-4 sm:px-0 lg:px-8">
+          <div class="block md:flex items-center justify-between">
+            <div>
+                <div class="flex items-center">
+                     <hr class="w-14 border-t-2 border-green-600 mr-4">
+                     <h6 class="text-green-600 font-bold text-xl mr-4">Recent Work</h6>
+                </div>
+                <h2 class="text-white text-3xl lg:text-5xl font-bold mb-2 md:w-3/4 mt-4">Some of my Recent projects</h2>
             </div>
-            <h1 class="text-[#fff] text-center font-bold text-[20px] mb-2">Joseph Duc</h1>
-            <p class="text-center">Peace Sandy is an exceptional software developer with a true passion for creating innovative solutions. She is amazing</p>
-          </div>
-          <div class="text-[#fff] bg-[#151515] shadow-lg rounded-lg overflow-hidden shadow-gray-950 border-color-[#fff] m-8">
-            <div class="flex justify-center" >
-            <img src="female image.jpg" alt="" class="rounded-full items-center h-45 w-32 mt-3 ">
+            <div class="mt-6 md:mt-0">
+              <a href="#" class="text-white border border-green-600 px-3 py-2 rounded-none text-base font-meduim hover:bg-green-600 focus:bg-green-600 mt-4">View All Projects</a>
             </div>
-            <h1 class="font-bold text-[20px] mb-2">Sandra Jakes</h1>
-            <p>One of the standout qualities of Peace Sandy is her ability to quickly grasp ideas and turn them into development </p>
           </div>
-          <div class="text-[#fff] bg-[#151515] shadow-lg rounded-lg overflow-hidden shadow-gray-950 border-color-[#fff] m-8" >
-            <div class="flex justify-center" >
-                <img src="blackfemale.jpg" alt="" class="rounded-full items-center h-45 w-32 mt-3">
-            </div>
-            <h1 class="font-bold text-[20px] mb-2">Mary Samuel</h1>
-            <p>I wholeheartedly recommend Peace Sandy for any software development role. Her dedication make her valuable.</p>
+          <div class="flex flex-wrap -mx-4">
+             <div class="w-full md:w-1/2 px-4 mt-20">
+                  <div class="relative">
+                       <img src="doubleclick.png" alt="" class="w-full grayscale">
+                  </div>
+                  <h5 class="text-[20px] font-semibold text-white mt-9">Double Click - <a href="" class="mr-2 hover: underline text-green-600 font-meduim text-xl mt-2">View on GitHub</a> </h5>
+                  <a href="" class="flex items-center text-green-600 font-medium text-xl mt-2">
+                    <span class="mr-2 hover:underline ">Live Site</span>
+                  </a>
+             </div>
+
+             <div class="w-full md:w-1/2 px-4 mt-20">
+              <div class="relative">
+                   <img src="doubleclick.png" alt="" class="w-full grayscale">
+              </div>
+              <h5 class="text-[20px] font-semibold text-white mt-9">Double Click - <a href="" class="mr-2 hover: underline text-green-600 font-meduim text-xl mt-2">View on GitHub</a> </h5>
+              <a href="" class="flex items-center text-green-600 font-medium text-xl mt-2">
+                <span class="mr-2 hover:underline ">Live Site</span>
+              </a>
+         </div>
+          
+         <div class="w-full md:w-1/2 px-4 mt-20">
+          <div class="relative">
+               <img src="doubleclick.png" alt="" class="w-full grayscale">
+          </div>
+          <h5 class="text-[20px] font-semibold text-white mt-9">Double Click - <a href="" class="mr-2 hover: underline text-green-600 font-meduim text-xl mt-2">View on GitHub</a> </h5>
+          <a href="" class="flex items-center text-green-600 font-medium text-xl mt-2">
+            <span class="mr-2 hover:underline ">Live Site</span>
+          </a>
+     </div>
+
+     <div class="w-full md:w-1/2 px-4 mt-20">
+      <div class="relative">
+           <img src="doubleclick.png" alt="" class="w-full grayscale">
+      </div>
+      <h5 class="text-[20px] font-semibold text-white mt-9">Double Click - <a href="" class="mr-2 hover: underline text-green-600 font-meduim text-xl mt-2">View on GitHub</a> </h5>
+      <a href="" class="flex items-center text-green-600 font-medium text-xl mt-2">
+        <span class="mr-2 hover:underline ">Live Site</span>
+      </a>
+ </div>
+ 
           </div>
         </div>
       </section>
+
+      
+
+      <section id="" class="pt-32">
+            <h2 class="flex justify-center text-4xl md:text-5xl text-center text-white md:text-left font-bold mb-8 md:mb-12">
+                My Portfolio
+            </h2>
+            <div class="flex justify-center items-start"> 
+            <ul class="w-full md:w-5/6 space-y-10 py-5 flex justify-center items-center">
+                <li class=" flex flex-col md:flex-row items-center justify-center  bg-white dark:bg-gray-700 rounded overflow-hidden">
+                    <div class="w-full md:1/3 h-60 ">
+                         <img src="pokedex.png" alt="portfolio" class="h-full w-full object-cover ">
+                    </div>
+                    <div class="w-full md:w-2/3 p-5">
+                      <h2 class="text-3xl font-bold mb-3">
+                        Portfolio 1
+                      </h2>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo, 
+                        quos eaque eligendi esse nihil quidem debitis accusamus facere saepe reiciendis 
+                        aspernatur rem ut quia dolore repellendus recusandae non natus minus officiis? Incidunt reprehenderit quibusdam
+                         ad iure nulla voluptates saepe porro inventore expedita eum! Ipsa nemo accusamus iste adipisci expedita.
+                      </p>
+                      <div class="mt-8 font-semibold text-white flex items-center gap-2 md:flex md:items-center md:justify-center">
+                           <a href="" class="portfolio-link bg-black flex items-center  gap-2 px-4 py-2 w-max hover:bg-slate-600">
+                            github
+                           </a>
+                           <a href="" class="portfolio-link bg-black flex items-center gap-2 px-4 py-2 w-max hover:bg-slate-600">
+                             website
+                           </a>
+                      </div>
+                    </div>
+                </li>
+            </ul>
+          </div>
+      </section>
+
+      <!--Testimonial-->
+
       <!--Project-->
-      <section id="project">
-         <div class="flex justify-center">
-          <h1 class="text-[40px] font-bold text-[#fff]">Check Out My Latest Projects</h1>
-         </div>
-         <div class="flex justify-between items-center px-[100px] py-[50px] pt-10 text-[#fff] text-center shadow-white">
-            <div class="bg-[#151515] shadow-lg rounded-lg overflow-hidden shadow-gray-950 border-color-[#fff] m-8">
-              <div>
-                <img src="doubleclick.png" alt="" class="h-45 w-30">
-              </div>
-              <h1 class="font-bold text-[20px] mb-2">Double Heart Click</h1>
-              <button class="bg-gray-600 rounded p-2 mt-3 mb-3"><a href="">View Here</a></button>
-            </div>
-
-            <div class="bg-[#151515] shadow-lg rounded-lg overflow-hidden shadow-gray-950 border-color-[#fff] m-8">
-              <div>
-                <img src="pokedex.png" alt="" class="h-45 w-30">
-              </div>
-              <h1 class="font-bold text-[20px] mb-2">Pokedex Game</h1>
-              <button class="bg-gray-600 rounded p-2 mt-3 mb-3"><a href="">View Here</a></button>
-            </div>
-
-            <div class="bg-[#151515] shadow-lg rounded-lg overflow-hidden shadow-gray-950 border-color-[#fff] m-8">
-              <div>
-                <img src="Screenshot 2023-07-31 181549.png" alt="" class="h-45 w-30">
-              </div>
-              <h1 class="font-bold text-[20px] mb-2">Testimonial Swiper</h1>
-              <button class="bg-gray-600 rounded p-2 mt-3 mb-3"><a href="">View Here</a></button>
-            </div>
-         </div>
-      </section>
-
+      
       <!--Articles-->
-      <section id="articles">
-        <div class="flex justify-center">
-          <h1 class="text-[40px] font-bold text-[#fff]">Articles 📑</h1>
-         </div>
-         <div class="flex justify-between items-center px-[100px] py-[50px] pt-10 text-[#fff] text-center shadow-white">
-            <div class="bg-[#151515] shadow-lg rounded-lg overflow-hidden shadow-gray-950 border-color-[#fff] m-8">
-              <div>
-                <img src="article screenshot.png" alt="" class="h-45 w-30">
-              </div>
-              <h1 class="font-bold text-[20px] mb-2">Build a Login Form</h1>
-              <button class="bg-gray-600 rounded p-2 mt-3 mb-3"><a href="">View Here</a></button>
-            </div>
-
-            <div class="bg-[#151515] shadow-lg rounded-lg overflow-hidden shadow-gray-950 border-color-[#fff] m-8">
-              <div>
-                <img src="article3.png" alt="" class="h-45 w-30">
-              </div>
-              <h1 class="font-bold text-[20px] mb-2">My Developer Experience</h1>
-              <button class="bg-gray-600 rounded p-2 mt-3 mb-3"><a href="">View Here</a></button>
-            </div>
-
-            <div class="bg-[#151515] shadow-lg rounded-lg overflow-hidden shadow-gray-950 border-color-[#fff] m-8">
-              <div>
-                <img src="articles2.png" alt="" class="h-45 w-30">
-              </div>
-              <h1 class="font-bold text-[20px] mb-2">Javascript Array</h1>
-              <button class="bg-gray-600 rounded p-2 mt-3 mb-3"><a href="">View Here</a></button>
-            </div>
-         </div>
-      </section>
+      
 
       <!--Contact Me-->
         <section id="contact">
@@ -201,5 +243,6 @@
             </div>
         </section>
 </body>
- <script src="script.js"></script>
+ <script src="script.js">
+ </script>
 </html>
