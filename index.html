@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <title>Personal Portfolio</title>
 </head>
-<body class="bg-black">
+<body class="bg-black scroll-smooth">
+  <!--Nav-->
       <nav class="fixed top-0 left-0 z-40 bg-black py-3 md:py-0 w-full backdrop-blur">
            <div class="container flex items-center justify-between h-16 and md:h-20 ">
               <h1 class="relative z-30 font-semibold text-2xl text-[#fff] space-x-6">
@@ -49,14 +50,15 @@
       </header> --> 
       <!--Hero Section Hero Section class="px-[200px] mt-[150px] lg:flex justify-between items-center gap-[120px]"-->
 
+      <!--Hero Section-->
       <section class="hero text-white py-28">
             <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h4 class="text-2xl font-bold text-purple-900 lg:leading-[94px] lg:text-[38px]">Hello, 👋 I'm Peace Sandy</h4>
-              <h1 class="text-5xl mt-3 font-bold lg:text-[88px] lg:leading-[94px]"><span id="typed"></span>Frontend Developer</h1>
+              <h4 class="text-2xl font-bold text-purple-900 lg:leading-[94px] lg:text-[38px]">Hello, <span class="animate-pulse">👋 </span> I'm Peace Sandy</h4>
+              <h1 class="text-5xl mt-3 font-bold lg:text-[88px] lg:leading-[94px]"><span id="typed" class="auto-type"></span></h1>
               <p class="mt-4 text-gray font-normal text-base w-full lg:w-3/6 ">I'm a technical writer and community manager</p>
               <div class="mt-14">
                 <div class="mt-6 flex items-center gap-3">
-                    <a href="#" class="bg-purple-950 text-white rounded-none py-3 px-6 text-lg font-medium mr-4 ">Download Cv</a>
+                    <a href="#" class="animate-bounce   bg-purple-950 text-white rounded-none py-3 px-6 text-lg font-medium mr-4 ">Download Cv</a>
                 </div>
               </div>
             </div>
@@ -70,87 +72,90 @@
          </div>
          <div class="flex flex-wrap items-center justify-center gap-24 md:gap-12">
               <div class="relative flex items-center justify-center w-28 h-28 rounded-full cursor-pointer">
-             <img src="css-3.png" alt="css" class="w-[80px] h-[70px]">
+             <img src="css-3.png" alt="css" class="animate-bounce w-[90px] h-[90px]">
               </div>
               <div> 
-             <img src="html.png" alt="html" class="w-[80px] h-[70px]">
+             <img src="html.png" alt="html" class="animate-bounce w-[80px] h-[70px]">
             </div>
             <div> 
-             <img src="java-script.png" alt="javascript" class="w-[80px] h-[70px]">
+             <img src="java-script.png" alt="javascript" class="animate-bounce w-[80px] h-[70px]">
             </div>
             <div> 
-             <img src="reacticon.png" alt="react" class="w-[80px] h-[70px]">
+             <img src="reacticon.png" alt="react" class="animate-bounce  w-[80px] h-[70px]">
             </div>
             <div>
-             <img src="vuejs.png" alt="vuejs" class="w-[80px] h-[70px]">
+             <img src="vuejs.png" alt="vuejs" class="animate-bounce  w-[80px] h-[70px]">
             </div>
              <div> 
-             <img src="tailwind.svg" alt="tailwindcss" class="w-[80px] h-[70px]">
+             <img src="tailwind.svg" alt="tailwindcss" class="animate-bounce w-[80px] h-[70px]">
             </div>
             <div> 
-              <img src="scss-svgrepo-com.svg" alt="tailwindcss" class="w-[80px] h-[70px]">
+              <img src="scss-svgrepo-com.svg" alt="tailwindcss" class="animate-bounce w-[80px] h-[70px]">
              </div>
              <div> 
-              <img src="git-svgrepo-com.svg" alt="tailwindcss" class="w-[80px] h-[70px]">
+              <img src="git-svgrepo-com.svg" alt="tailwindcss" class="animate-bounce w-[80px] h-[70px]">
              </div>
              <div> 
-              <img src="figma-svgrepo-com.svg" alt="tailwindcss" class="w-[80px] h-[70px]">
+              <img src="figma-svgrepo-com.svg" alt="tailwindcss" class="animate-bounce  w-[80px] h-[70px]">
              </div>
             </div>
          </div>
       </section>
-
+       
+      <!--Portfolio section-->
       <section class="work mt-28 py-28 bg-light-dark">
         <div class="container max-w-6xl mx-auto px-4 sm:px-0 lg:px-8">
           <div class="block md:flex items-center justify-between">
             <div>
                 <div class="flex items-center">
-                     <hr class="w-14 border-t-2 border-green-600 mr-4">
-                     <h6 class="text-green-600 font-bold text-xl mr-4">Recent Work</h6>
+                     <hr class="w-14 border-t-2 border-[#A792B3] mr-4">
+                     <h6 class=" text-[#A792B3] font-bold text-xl mr-4">Recent Work</h6>
                 </div>
                 <h2 class="text-white text-3xl lg:text-5xl font-bold mb-2 md:w-3/4 mt-4">Some of my Recent projects</h2>
             </div>
             <div class="mt-6 md:mt-0">
-              <a href="#" class="text-white border border-green-600 px-3 py-2 rounded-none text-base font-meduim hover:bg-green-600 focus:bg-green-600 mt-4">View All Projects</a>
+              <a href="#" class="  text-white border border-[#A792B3] px-3 py-2 rounded-none text-base font-meduim hover:bg-[#A792B3] focus:bg-[#A792B3] mt-4">View All Projects</a>
             </div>
           </div>
+
           <div class="flex flex-wrap -mx-4">
-             <div class="w-full md:w-1/2 px-4 mt-20">
+
+             <div class=" w-full md:w-1/2 px-4 mt-20">
                   <div class="relative">
                        <img src="githubprofiles.png" alt="" class="w-full">
                   </div>
-                  <h5 class="text-[20px] font-semibold text-white mt-9">Double Click - <a href="" class="mr-2 hover: underline text-green-600 font-meduim text-xl mt-2">View on GitHub</a> </h5>
-                  <a href="" class="flex items-center text-green-600 font-medium text-xl mt-2">
+                  <h5 class="text-[20px] font-semibold text-white mt-9">Double Click - <a href="" class="mr-2 hover: underline text-[#A792B3] font-meduim text-xl mt-2">View on GitHub</a> </h5>
+                  <a href="" class="flex items-center text-[#A792B3] font-medium text-xl mt-2">
                     <span class="mr-2 hover:underline ">Live Site</span>
                   </a>
              </div>
 
-             <div class="w-full md:w-1/2 px-4 mt-20">
+             <div class=" w-full md:w-1/2 px-4 mt-20">
               <div class="relative">
                    <img src="Screenshot 2023-09-01 144220.png" alt="" class="w-full">
               </div>
-              <h5 class="text-[20px] font-semibold text-white mt-9">Double Click - <a href="" class="mr-2 hover: underline text-green-600 font-meduim text-xl mt-2">View on GitHub</a> </h5>
-              <a href="" class="flex items-center text-green-600 font-medium text-xl mt-2">
+              <h5 class="text-[20px] font-semibold text-white mt-9">Double Click - <a href="" class="mr-2 hover: underline text-[#A792B3] font-meduim text-xl mt-2">View on GitHub</a> </h5>
+              <a href="" class="flex items-center text-[#A792B3] font-medium text-xl mt-2">
                 <span class="mr-2 hover:underline ">Live Site</span>
               </a>
          </div>
           
-         <div class="w-full md:w-1/2 px-4 mt-20">
+         <div class=" w-full md:w-1/2 px-4 mt-20">
           <div class="relative">
                <img src="smartshoppinglist.png" alt="" class="w-full">
           </div>
-          <h5 class="text-[20px] font-semibold text-white mt-9">Double Click - <a href="" class="mr-2 hover: underline text-green-600 font-meduim text-xl mt-2">View on GitHub</a> </h5>
-          <a href="" class="flex items-center text-green-600 font-medium text-xl mt-2">
+          <h5 class="text-[20px] font-semibold text-white mt-9">Double Click - <a href="" class="mr-2 hover: underline text-[#A792B3] font-meduim text-xl mt-2">View on GitHub</a> </h5>
+          <a href="" class="flex items-center text-[#A792B3] font-medium text-xl mt-2">
             <span class="mr-2 hover:underline ">Live Site</span>
           </a>
      </div>
 
-     <div class="w-full md:w-1/2 px-4 mt-20">
+     <div class=" w-full md:w-1/2 px-4 mt-20">
       <div class="relative">
            <img src="pokedex.png" alt="" class="w-full">
       </div>
-      <h5 class="text-[20px] font-semibold text-white mt-9">Double Click - <a href="" class="mr-2 hover: underline text-green-600 font-meduim text-xl mt-2">View on GitHub</a> </h5>
-      <a href="" class="flex items-center text-green-600 font-medium text-xl mt-2">
+      <h5 class="text-[20px] font-semibold text-white mt-9">Double Click - <a href="" class="mr-2 hover: underline text-[#A792B3] font-meduim text-xl mt-2">View on GitHub</a> </h5>
+      <a href="" class="flex items-center text-[#A792B3] font-medium text-xl mt-2">
         <span class="mr-2 hover:underline ">Live Site</span>
       </a>
  </div>
@@ -160,97 +165,113 @@
       </section>
 
       
+      <!--Blog Session-->
+      <section id="" class="pt-5">
+        <div class=" container max-w-6xl mx-auto px-4 sm:px-0 lg:px-8">
+          <div class="block md:flex items-center justify-between">
+            <div>
+                <div class="flex items-center">
+                     <hr class="w-14 border-t-2 border-[#A792B3] mr-4">
+                     <h6 class="text-[#A792B3] font-bold text-xl mr-4">My Blog</h6>
+                </div>
+            </div>
+      </div>
+            <div>
+              <div class="m-10 flex justify-center text-[black] shadow-[#152C00]">
+                <div class="bg-[#A792B3] p-10 rounded-md text-[black] shadow-green-700">
+                  <h1 class="flex justify-center font-bold">Blog</h1>
+                    <p>I speak whithout a mouth and hear witholult ear. I have nobody ,</p>
+                    <p> but I come alive with the word . What am i ?</p>
+                    <p>(Answer: echo)</p>
 
-      <section id="" class="pt-32">
-            <h2 class="flex justify-center text-4xl md:text-5xl text-center text-white md:text-left font-bold mb-8 md:mb-12">
-                My Portfolio
-            </h2>
-            <div class="flex justify-center items-start"> 
-            <ul class="w-full md:w-5/6 space-y-10 py-5 flex justify-center items-center">
-                <li class=" flex flex-col md:flex-row items-center justify-center  bg-white dark:bg-gray-700 rounded overflow-hidden">
-                    <div class="w-full md:1/3 h-60 ">
-                         <img src="pokedex.png" alt="portfolio" class="h-full w-full object-cover ">
-                    </div>
-                    <div class="w-full md:w-2/3 p-5">
-                      <h2 class="text-3xl font-bold mb-3">
-                        Portfolio 1
-                      </h2>
-                      <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo, 
-                        quos eaque eligendi esse nihil quidem debitis accusamus facere saepe reiciendis 
-                        aspernatur rem ut quia dolore repellendus recusandae non natus minus officiis? Incidunt reprehenderit quibusdam
-                         ad iure nulla voluptates saepe porro inventore expedita eum! Ipsa nemo accusamus iste adipisci expedita.
-                      </p>
-                      <div class="mt-8 font-semibold text-white flex items-center gap-2 md:flex md:items-center md:justify-center">
-                           <a href="" class="portfolio-link bg-black flex items-center  gap-2 px-4 py-2 w-max hover:bg-slate-600">
-                            github
-                           </a>
-                           <a href="" class="portfolio-link bg-black flex items-center gap-2 px-4 py-2 w-max hover:bg-slate-600">
-                             website
-                           </a>
-                      </div>
-                    </div>
-                </li>
-            </ul>
-          </div>
+                    <h5 class="text-[20px] font-semibold text-white mt-9">Double Click - <a href="" class="mr-2 hover: underline text-[#A792B3] font-meduim text-xl mt-2">View on GitHub</a> </h5>
+                   <a href="" class="flex items-center text-[#A792B3] font-medium text-xl mt-2">
+                  <span class="mr-2 hover:underline ">Live Site</span>
+                    </a>
+                </div>
+            </div>
+            </div>
       </section>
 
-      <!--Testimonial-->
-
-      <!--Project-->
-      
-      <!--Articles-->
-      
 
       <!--Contact Me-->
-        <section id="contact">
-           <div class="text-[#fff] flex justify-center">
-             <div class="text-[#fff]">
-              <h1 class="text-[40px] font-bold">Get In Touch 👋</h1>
-              <h3 class="text-[30px] font-bold">Let's Create Some<span class="text-orange-300">thing</span> <span class="text-orange-600">Fantastic ✨</span></h3>
-             </div>
-           </div>
-           <div class="text-[#fff]  mx-auto px-4 py-8 flex justify-center items-center pt-10 ">
-            <form action="" class="items-center bg-[#151515] px-20 py-10 rounded">
-              <div class="mb-4 justify-center">
-                <label for="name" class="block text-white font-bold mb-2">Name</label>
-              <input type="text" class="block w-full px-3 py-2 border rounded-lg text-white bg-gray-600 border-none">
-              </div>
-              <div class="mb-4">
-                <label for="email" class="block text-white font-bold mb-2"  >E-mail Address</label>
-            <input type="email" class="block w-full px-3 py-2 border rounded-lg text-white bg-gray-600 border-none">
-              </div>
-              <div class="mb-4">
-                <label for="" class="block text-white font-bold mb-2">Message</label>
-            <textarea name="" id="" cols="" rows="" class="block w-full px-3 py-2 border rounded-lg text-white bg-gray-600 border-none"></textarea>
-              </div>
-              <div class="flex justify-center">
-                <button class="bg-gray-600 rounded p-2 mt-3 mb-3">Send</button>
-              </div>
-            </form>
-           </div>
-        </section>
+      <div class="text-center w-full ">
+        <h1 class="text-4xl lg:text-6xl">Contact Form</h1>
+      </div>
+      <div
+        class="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-[black] text-[#fff] rounded-lg shadow-lg">
+        <div class="flex flex-col justify-between">
+          <div>
+            <h2 class="text-4xl lg:text-5xl font-bold leading-tight">Get in Touch!</h2>
+            <div class="text-gray-700 mt-8">
+              Let's create something fantastic.
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div>
+            <span class="uppercase text-sm text-gray-600 font-bold">Full Name</span>
+            <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="text" placeholder="">
+          </div>
+          <div class="mt-8">
+            <span class="uppercase text-sm text-gray-600 font-bold">Email</span>
+            <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="text">
+          </div>
+          <div class="mt-8">
+            <span class="uppercase text-sm text-gray-600 font-bold">Message</span>
+            <textarea
+              class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+          </div>
+          <div class="mt-8">
+            <button
+              class="uppercase text-sm font-bold tracking-wide bg-[#A792B3] text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+              Send Message
+            </button>
+          </div>
+        </div>
+      </div>
+        
+        <!--Footer-->
+        <div class=" container max-w-6xl mx-auto px-4 sm:px-0 lg:px-8">
+          <div class="block md:flex items-center justify-between">
+            <div>
+                <div class="flex items-center">
+                     <hr class="w-14 border-t-2 border-[#A792B3] mr-4">
+                     <h6 class="text-[#A792B3] font-bold text-xl mr-4">You can also find me Here!</h6>
+                </div>
+            </div>
+      </div>
+        <div>
+          <h3 class="text-2xl font-bold mb-2">&lt;CONTACT /&gt;</h3>
+          <div class="grid grid-cols-1 gap-2 md:grid-cols-4">
+            <div class="bg-black text-white p-2 rounded-md text-center font-bold text-xl hover:underline cursor-pointer"><a href="">Twitter</a></div>
+            <div class="bg-black text-white p-2 rounded-md text-center font-bold text-xl hover:underline"><a href="">GitHub</a></div>
+            <div class="bg-black text-white p-2 rounded-md text-center font-bold text-xl hover:underline"><a href="">LinkedIn</a></div>
+            <div class="bg-black text-white p-2 rounded-md text-center font-bold text-xl hover:underline"><a href="">E-Mail</a></div>
+          </div>
+          <div class="pt-5 pb-0">
+            <div class="bg-black text-white p-2 rounded-md text-center font-bold text-xl hover:underline">© 2023 Peace Sandy. All rights reserved.</div>
+          </div>
+        </div>
 
         <!--Footer-->
-        <section>
-            <div class="bg-[#151515]  text-white py-6 ">
-               <div class="flex justify-center">
-                  <h1 class="text-[20px] font-bold">Find Me He<span class="text-orange-300">re</span> <span class="text-orange-500">Also</span></h1>
-               </div>
-               <div class="flex space-x-4  justify-between items-center px-[200px] py-[50px] pt-10">
-                 <a href="https://github.com/Peacesandy">
-                   <img src="githublogo.png" alt="" class="w-30 h-20">
-                 </a>
-                 <a href="https://www.linkedin.com/in/peace-sandy-bb7a691b0">
-                    <img src="linkedin.png" alt="" class="w-30 h-20">
-                 </a>
-                 <a href="http://twitter.com/PeaceSandy3">
-                  <img src="twitter-sign.png" alt="" class="w-30 h-20">
-                 </a>
-               </div>
-               <p class="text-gray-300 flex justify-center">© 2023 Peace Sandy. All rights reserved.</p>
-            </div>
-        </section>
+        
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+        <script>
+             var typed = new Typed(".auto-type", {
+              strings: ["Frontend Developer", "Technical Writer"],
+              typeSpeed: 150,
+              backSpeed: 150,
+              loop: true
+             })
+
+             
+
+        </script>
 </body>
  <script src="script.js">
  </script>
