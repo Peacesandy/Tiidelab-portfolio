@@ -12,7 +12,7 @@ const toggleMenuIcon =toggleMenu.querySelector('img')
   function changeMenuIcon() {
     const isContainTranslate = menu.classList.contains('translate-y-[200%]')
      const icon = isContainTranslate ? 'icon-menu' : 'icon-close'
-     toggleMenuIcon.src = `${icon}.svg`
+     toggleMenuIcon.src = `${scss-svgrepo-com.svg}.svg`
   }
 
  
