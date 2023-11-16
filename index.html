@@ -6,12 +6,23 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <title>Personal Portfolio</title>
 </head>
 <body class="bg-black scroll-smooth">
-  <!--Nav-->
-      <nav class="fixed top-0 left-0 z-40 bg-black py-3 md:py-0 w-full backdrop-blur">
+     <nav class="md:mr-10">
+    <div class="container py-5 ml-4 ">
+        <button class="text-white px-4 py-2 md:px-6 md:py-3 bg-transparent text-opacity-75 border border-white hover:bg-white hover:text-black rounded-full">Contact</button>
+    </div>
+    <div class="banner flex items-center flex-row-reverse md:flex-row gap-3 md:gap-12">
+         Time
+    </div>
+     <div id="clock"></div>
+</nav>
+
+  <!--Nav
+      <nav class=" top-0 left-0 z-40 bg-black py-3 md:py-0 w-full backdrop-blur">
            <div class="container flex items-center justify-between h-16 and md:h-20 ">
               <h1 class="relative z-30 font-semibold text-2xl text-[#fff] space-x-6">
                   Peace Sandy
@@ -31,7 +42,7 @@
                   </button>
               </div>
            </div>
-      </nav>
+      </nav> -->
     <!--  <header class="bg-[black] text-[white] text-[20px]">
         <nav class="md:flex justify-between hidden items-center px-[100px] py-[30px] space-x-6" >
              <div>
@@ -53,14 +64,14 @@
       <!--Hero Section Hero Section class="px-[200px] mt-[150px] lg:flex justify-between items-center gap-[120px]"-->
 
       <!--Hero Section-->
-      <section class="hero text-white py-28" id="home">
+      <section class="hero text-white py-10" id="home">
             <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h4 class="text-2xl font-bold text-purple-900 lg:leading-[94px] lg:text-[38px]">Hello, <span class="animate-pulse">👋 </span> I'm Peace Sandy</h4>
-              <h1 class="text-5xl mt-3 font-bold lg:text-[88px] lg:leading-[94px]"><span id="typed" class="auto-type"></span></h1>
+              <h1 class="text-5xl mb-6 font-serif lg:text-[88px] lg:leading-[94px]">Peace Sandy</h1>
+              <h1 class="text-5xl mt-3 font-serif lg:text-[88px] lg:leading-[94px]"><span id="typed" class="auto-type"></span></h1>
               <p class="mt-4 text-gray font-normal text-base w-full lg:w-3/6 ">I'm a technical writer and community manager</p>
               <div class="mt-14">
                 <div class="mt-6 flex items-center gap-3">
-                    <a href="#" class="animate-bounce   bg-purple-950 text-white rounded-none py-3 px-6 text-lg font-medium mr-4 ">Download Cv</a>
+                    <a href="#" class="animate-bounce text-white px-4 py-2 md:px-6 md:py-3 bg-transparent text-opacity-75 border border-white hover:bg-white hover:text-black rounded-full text-lg font-medium mr-4 ">Download Cv</a>
                 </div>
               </div>
             </div>
@@ -68,37 +79,34 @@
 
       
       <!--Skills Section-->
-      <section id="skills">
+      <section id="skill">
          <div class="flex justify-center pt-10" >
             <h1 class="font-bold text-[#fff] text-3xl md:text-4xl mb-14">My Skills</h1>
          </div>
          <div class="flex flex-wrap items-center justify-center gap-24 md:gap-12">
               <div class="relative flex items-center justify-center w-28 h-28 rounded-full cursor-pointer">
-             <img src="css-3.png" alt="css" class="animate-bounce w-[90px] h-[90px]">
+             <ion-icon name="logo-react" class="animate-bounce  w-[80px] h-[70px]"></ion-icon>
               </div>
               <div> 
-             <img src="html.png" alt="html" class="animate-bounce w-[80px] h-[70px]">
+             <ion-icon name="logo-html5" class="animate-bounce  w-[80px] h-[70px]"></ion-icon>
             </div>
             <div> 
-             <img src="java-script.png" alt="javascript" class="animate-bounce w-[80px] h-[70px]">
+              <ion-icon name="logo-javascript" class="animate-bounce  w-[80px] h-[70px]"></ion-icon>
             </div>
             <div> 
-             <img src="reacticon.png" alt="react" class="animate-bounce  w-[80px] h-[70px]">
+              <ion-icon name="logo-vue" class="animate-bounce  w-[80px] h-[70px]"></ion-icon>
             </div>
             <div>
-             <img src="vuejs.png" alt="vuejs" class="animate-bounce  w-[80px] h-[70px]">
+              <ion-icon name="logo-github" class="animate-bounce  w-[80px] h-[70px]"></ion-icon>
             </div>
              <div> 
-             <img src="tailwind.svg" alt="tailwindcss" class="animate-bounce w-[80px] h-[70px]">
+              <ion-icon name="logo-figma" class="animate-bounce  w-[80px] h-[70px]"></ion-icon>
             </div>
             <div> 
-              <img src="scss-svgrepo-com.svg" alt="tailwindcss" class="animate-bounce w-[80px] h-[70px]">
+              <ion-icon name="logo-sass" class="animate-bounce  w-[80px] h-[70px]"></ion-icon>
              </div>
              <div> 
-              <img src="git-svgrepo-com.svg" alt="tailwindcss" class="animate-bounce w-[80px] h-[70px]">
-             </div>
-             <div> 
-              <img src="figma-svgrepo-com.svg" alt="tailwindcss" class="animate-bounce  w-[80px] h-[70px]">
+              <img src="tailwind-css-svgrepo-com.svg" alt="tailwindcss" class=" bg-white animate-bounce w-[80px] h-[70px]">
              </div>
             </div>
          </div>
@@ -122,15 +130,27 @@
 
           <div class="flex flex-wrap -mx-4">
 
-             <div class=" w-full md:w-1/2 px-4 mt-20">
-                  <div class="relative">
-                       <img src="githubprofiles.png" alt="" class="w-full">
-                  </div>
-                  <h5 class="text-[20px] font-semibold text-white mt-9">Double Click - <a href="" class="mr-2 hover: underline text-[#A792B3] font-meduim text-xl mt-2">View on GitHub</a> </h5>
-                  <a href="" class="flex items-center text-[#A792B3] font-medium text-xl mt-2">
-                    <span class="mr-2 hover:underline ">Live Site</span>
-                  </a>
-             </div>
+             <div>
+              <div class="m-10 flex justify-center text-[black] shadow-[#152C00]">
+                <div class="bg-[#A792B3] p-10 rounded-md text-[black] shadow-green-700">
+                  <div class="">
+                  <ion-icon name="logo-github" class="h-9 w-10 cursor-pointer"></ion-icon>
+                  <ion-icon name="link-outline" class="h-9 w-10 cursor-pointer"></ion-icon>
+                </div>
+                    <img src="githubprofiles.png" alt="" class="">
+                </div>
+            </div>
+
+            <div>
+              <div class="m-10 flex justify-center text-[black] shadow-[#152C00]">
+                <div class="bg-[#A792B3] p-10 rounded-md text-[black] shadow-green-700">
+                  <div class="">
+                  <ion-icon name="logo-github" class="h-9 w-10 cursor-pointer"></ion-icon>
+                  <ion-icon name="link-outline" class="h-9 w-10 cursor-pointer"></ion-icon>
+                </div>
+                    <img src="Screenshot 2023-09-01 144220.png" alt="" class="">
+                </div>
+            </div>
 
              <div class=" w-full md:w-1/2 px-4 mt-20">
               <div class="relative">
@@ -273,7 +293,8 @@
              })
 
              
-
+             var today = new Date()
+           console.log(today)
         </script>
 </body>
  <script src="script.js">

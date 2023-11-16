@@ -15,4 +15,13 @@ const toggleMenuIcon =toggleMenu.querySelector('img')
      toggleMenuIcon.src = `${scss-svgrepo-com.svg}.svg`
   }
 
- 
+ // Code to display current date and time
+
+ // Get Value
+ let clock = document.getElementById('clock')
+
+ //Set Time
+ setInterval(function(){
+   let date = new Date ()
+   clock.innerHTML = date.toLocaleTimeString()
+ })
